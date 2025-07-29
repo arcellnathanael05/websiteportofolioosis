@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.home{
+    width: 100%;
+    justify-content: center;
+}
+.logo{
+    height: 15vh;
+    background-color: rgb(240, 233, 233);
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    text-decoration: none;
+    color: red;
+    font-size: 1.5rem;
+    margin-left: 75px;
+    font-weight: bold;
+}
+.logo h2{
+    font-weight: bold;
+    padding-top: 15px;
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+.searchbar{
+    padding-left: 200px;
+    display: flex;
+}
+.searchbar input{
+    padding-left: 20px;
+}
+.search{
+    padding-left: 30px;
+}
+.searchbar button{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.logo input{
+    border: 0px;
+    border-radius: 20px;
+    height: 30px;
+    width: 500px;
+}
+.sosmed{
+    padding-left: 250px;
+}
+.sosmed-youtube img, .sosmed-twitter img, .sosmed-instagram img{
+    width: 6%;
+    cursor: pointer;
+}
+.main{
+    height: 35vh;
+    background-color: aliceblue;
+    width: 85%;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-left: 70px;
+}
+.main h1{
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 40px;
+}
+.main p{
+    text-align: center;
+    font-size: 1.25rem;
+    margin-left: 20px;
+}
+.main .btn{
+    padding-top: 30px;
+    padding-left: 575px;
+}
+.main button{
+    border-radius: 20px;
+    width: 15%;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.37s;
+}
+.main button:hover{
+    transform: scale(1.03);
+}
+.main-item{
+    height: 25vh;
+    background-color: bisque;
+    display: flex;
+    margin-top: 40px;
+    border-radius: 20px;
+    width: 85%;
+    margin-left: 70px;
+}
+.main-item p{
+    margin-left: 20px;
+}
+.main-item-1, .main-item-2, .main-item-3, .main-item-4{
+    display: flex;
+    margin-left: 75px;
+    padding-top: 30px;
+}
+.main-item-1 img, .main-item-2 img, .main-item-3 img, .main-item-4 img{
+    width: 130px;
+    height: 95px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.main-item-1 p, .main-item-2 p, .main-item-3 p, .main-item-4 p{
+    padding-top: 45px;
+}
+.atas {
+    display: flex;
+    width: 92%;
+    margin-left: 45px;
+}
+.atas-isi {
+    /* border: red solid 1px; */
+    border-radius: 10px;
+    background-color: aliceblue;
+    width: 196px;
+    height: 335px;
+    justify-content: center;
+    margin: 27px;
+    box-shadow:  0px 0px 10px 0px rgb(78, 73, 73);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.atas-isi:hover{
+    transform: scale(1.01);
+}
+.atas-isi img {
+    width: 150px;
+    height: 125px;
+    margin-left: 23px;
+    margin-top: 15px;
+}
+.atas-isi p, .atas-isi h3, .atas-isi h2{
+    margin-left: 15px;
+    margin-top: 6px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.bawah {
+    display: flex;
+    width: 92%;
+    margin-left: 45px;
+}
+.bawah-isi {
+    /* border: red solid 1px; */
+    border-radius: 10px;
+    background-color: aliceblue;
+    width: 196px;
+    height: 335px;
+    justify-content: center;
+    margin: 27px;
+    box-shadow: 0px 0px 10px 0px rgb(78, 73, 73);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.bawah-isi:hover{
+    transform: scale(1.02);
+}
+.bawah-isi img {
+    width: 150px;
+    height: 150px;
+    margin-left: 23px;
+    margin-top: 15px;
+
+}
+.bawah-isi p, .bawah-isi h3, .bawah-isi h2{
+    margin-left: 6px;
+}
+.layar {
+    display: flex;
+    margin-left: 30px;
+}
+.L-isi {
+    /* border: 1px red solid; */
+    background-color: lightblue;
+    box-shadow: 0px 0px 10px 0px rgb(78, 73, 73);
+    width: 42%;
+    height: 290px;
+    border-radius: 50px;
+    margin: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.L-isi:hover{
+    transform: scale(1.03);
+}
+.L-isi img{
+    margin-top: 10px;
+    margin-left: 190px;
+    width: 185px;
+    height: 175px;
+}
+.layar h2, .layar p{
+    text-align: center;
+}
+.layar h4{
+    font-weight: bold;
+    text-align: center;
+}
+.harga {
+    font-size: 20px;
+}
+.footer{
+    height: 20vh;
+    background-color: rgb(224, 237, 233);
+    display: flex;
+    align-items: center;
+}
+.footer-left{
+    margin-left: 40px;
+    color: red;
+}
+.footer-mid{
+    font-size: 1rem;
+    margin-left: 75px;
+}
+.footer-right{
+    margin-right: 40px;
+    margin-left: 75px;
+}
+.footer-right p{
+    font-size: 1.1rem;
+}
