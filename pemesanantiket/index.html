@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Tiket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h2>Pemesanan Tiket Online</h2>
+    </div>
+    <div class="home">
+        <div class="movie">
+            <div class="movie-flex">
+                <div class="movie-img"><img src="img/demonslayer.jpg" alt=""></div>
+                <div class="movie-img"><img src="img/madameweb.jpeg" alt=""></div>
+                <div class="movie-img"><img src="img/pemandijenazah.jpeg" alt=""></div>
+                <div class="movie-img"><img src="img/agaklaen.jpeg" alt=""></div>
+                <div class="movie-img"><img src="img/bobmarley.jpeg" alt=""></div>
+                <div class="movie-img"><img src="img/sindengaib.jpeg" alt=""></div>
+            </div>
+        </div>
+        <div class="bottomhome">
+            <div class="kotakpesan">
+                <div class="pesan">
+                    <h2>Pesan Tiket</h2>
+                    <select name="" id="pilih">
+                        <option value="none">Pilih</option>
+                        <option value="demonslayer">Demon Slayer</option>
+                        <option value="madameweb">Madame Web</option>
+                        <option value="pemandijenazah">Pemandi Jenazah</option>
+                        <option value="agaklaen">Agak Laen</option>
+                        <option value="bobmarley">Bob Marley</option>
+                        <option value="sindengaib">Sinden Gaib</option>
+                    </select>
+                    <input type="text" placeholder="Harga" id="hargaawal" disabled><br>
+                    <h4>Jumlah beli tiket:  <input type="text" id="jumlah">
+                    <p>Total: <span id="bayar"></span></p></h4>
+                    <h5>Note: Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis amet rerum maiores<br> qui officiis voluptatibus in optio molestias iste. Saepe at quis, minus voluptatum in, non quia dicta tempora, aliquam illo et. Quaerat, sunt?</h5>
+                    <div class="btn">
+                    <button onclick="hitung()">Hitung</button>
+                    <button>Clear</button>
+                    </div>
+                </div>
+            </div>
+                <div class="kotaksinopsis">
+                    <div class="sinopsis">
+                        <div class="sinopsis-gambar">
+                        <img id="img" src="" alt="">
+                        </div>
+                        <div class="sinopsis-teks">
+                            <p id="teks">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi hic at quam quasi officia modi voluptatibus ipsa nam sit neque nemo dolor, praesentium vel quia tenetur, suscipit laudantium fuga nesciunt ab? Quisquam quidem laudantium soluta eius assumenda velit eaque maiores pariatur quod nostrum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var selectElement = document.getElementById("pilih");
+    var imgElement = document.getElementById("img");
+    var harga;
+    var sinopsis;
+
+    selectElement.addEventListener("change", function() {
+        var selectValue = selectElement.value;
+        
+        if(selectValue === "demonslayer"){
+            imgElement.src = "img/demonslayer.jpg";
+            hargaawal = 45000;
+            sinopsis = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae architecto ex, obcaecati cupiditate quod sint dicta accusamus repudiandae unde quae doloribus reprehenderit. Eum obcaecati aliquam vero illum aperiam repudiandae quos.";
+        }else if(selectValue === "madameweb"){
+            imgElement.src = "img/madameweb.jpeg";
+            hargaawal = 56000;
+            sinopsis = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti veniam molestiae placeat ut ab dignissimos a laboriosam recusandae cum ipsum provident enim ea reiciendis illo, similique doloribus quis maiores repellat ratione mollitia assumenda quae sed tenetur.";
+        }else if(selectValue === "pemandijenazah"){
+            imgElement.src = "img/pemandijenazah.jpeg";
+            hargaawal = 42000;
+            sinopsis = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid asperiores, eum laudantium illo deserunt vel quia fuga mollitia? Sint corrupti consequatur cumque veniam iste quibusdam quia aperiam fuga hic nam nihil mollitia officia aspernatur, provident, quasi saepe obcaecati vero reprehenderit.";
+        }else if(selectValue === "agaklaen"){
+            imgElement.src = "img/agaklaen.jpeg";
+            hargaawal = 50000;
+            sinopsis = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium numquam nihil, modi quam, corrupti eos obcaecati rerum culpa consequatur ipsam veniam nam natus laborum doloremque impedit, eaque quisquam? Dignissimos porro exercitationem, sapiente libero saepe quam?";
+        }else if(selectValue === "bobmarley"){
+            imgElement.src = "img/bobmarley.jpeg";
+            hargaawal = 47000;
+            sinopsis = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit saepe minus quod expedita itaque voluptate magnam cum recusandae cumque earum. Nisi, nobis. Cumque dolore quasi veritatis eveniet, distinctio molestias sit nam neque fugit optio esse inventore.";
+        }else if(selectValue === "sindengaib"){
+            imgElement.src = "img/sindengaib.jpeg";
+            hargaawal = 52000;
+            sinopsis = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem qui labore, eos asperiores possimus sint? Sequi unde quisquam odit similique non quo reprehenderit doloremque cum sed, labore, deserunt facere veritatis distinctio hic voluptatem, aliquid rem laboriosam fugiat? Quae vel minus consequuntur necessitatibus.";
+        }else if(selectValue === "none"){
+            imgElement.src = "";
+            hargaawal = 0;
+            sinopsis = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam impedit, quo ea numquam unde, id eos exercitationem consequuntur ad inventore asperiores cumque necessitatibus ipsa porro voluptatum commodi, recusandae libero reprehenderit explicabo maxime soluta. Facilis quidem unde illo temporibus autem adipisci reiciendis voluptatum quia.";
+        }
+        document.getElementById("hargaawal").value = hargaawal;
+        document.getElementById("teks").innerText = sinopsis;
+    });
+
+        
+
+    function hitung(){
+        var hargaawal = parseFloat(document.getElementById("hargaawal").value);
+        var jumlah = parseFloat(document.getElementById("jumlah").value);
+        var bayar = hargaawal*jumlah;
+
+        document.getElementById("bayar").textContent= 'Rp. ' + bayar.toFixed(0);
+    }
+    
+
+</script>
+</html>
