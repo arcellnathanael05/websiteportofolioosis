@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header{
+    height: 5vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+.home{
+    width: 100%;
+    height: 96vh;
+    background-color:  rgb(232, 228, 228);
+}
+.movie-banner{
+    width: 100%;
+}
+.movie{
+    margin-left: 2.5%;
+    border-radius: 10px;
+    background-color: white;
+    width: 95%;
+    height: 43vh;
+    margin-top: 5px;    
+    
+}
+.movie-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+.movie-img{
+    margin-top: 25px;
+}
+.movie-img img{
+    height: 230px;
+    width: 160px;
+    border-radius: 20px;
+}
+.bottomhome{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.kotakpesan{
+    margin-left: 2.5%;
+    margin-top: 1%;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    height: 45vh;
+    overflow-y: scroll;
+}
+.pesan h2{
+    margin-top: 4px;
+    text-align: center;
+    font-size: 19px;
+}
+select, .pesan h4, .pesan h5{
+    margin-top: 1%;
+    margin-left: 5%;
+}
+.pesan .btn{
+    display: flex;
+    margin-top: 1%;
+}
+.pesan .btn button{
+    background-color: rgb(56, 55, 55);
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    height: 40px;
+    margin-left: 33px;
+}
+.kotaksinopsis{
+    border-radius: 10px;
+    background-color: white;
+    width: 42%;
+    margin-top: 1%;
+    margin-left: 3%;
+    overflow-y: scroll;
+}
+.sinopsis{
+    display: flex;
+    justify-content: center;
+}
+.sinopsis-gambar, .sinopsis-teks{
+    margin-left: 4%;
+    margin-top: 3%;
+}
+.sinopsis img{
+    border-radius: 20px;
+    height: 230px;
+    width: 160px;
+}
+@media (max-width: 1000px){
+    .movie{
+        width: 95%;
+        height: 80vh;
+    }
+    .movie-img img{
+        margin-top: 6%;
+    }
+    .kotakpesan {
+        width: 95%;
+    }
+    .kotaksinopsis {
+        width: 95%;
+    }
+    .movie-img img{
+        margin: 20px;
+        height: 200px;
+        width: 130px;
+    }
+}
+@media (max-width: 520px){
+    .movie{
+        height: 100vh;
+    }
+}
